@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.son-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.info-text, h1, p{
+    color: white;
+    margin: 0px 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.input{
+    outline: none;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.488);
+}
+
+.btn-inscrever{
+    cursor: pointer;
+    border: none;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    animation: btn 1s linear infinite;
+}
+
+@keyframes btn{
+    0%{
+        box-shadow: 0px 0px 5px red;
+    }
+    50%{
+        box-shadow: 0px 0px 20px red;
+    }
+    100%{
+        box-shadow: 0px 0px 5px red;
+    }
+}
+
+
+.video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+iframe{
+    width: 450px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px){
+    .video{
+        display: none;
+    }
+}
+
+.iframe > p{
+    text-align: center;
+    margin-top: 10px;
+}
